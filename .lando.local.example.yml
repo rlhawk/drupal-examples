@@ -27,4 +27,3 @@ services:
       user: drupal
       password: drupal
       database: drupal
-
