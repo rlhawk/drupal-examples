@@ -1,0 +1,9 @@
+name: custom_theme
+type: theme
+base theme: false
+description: A custom theme.
+package: Custom
+core_version_requirement: ^8 || ^9
+
+libraries:
+  - custom_theme/global

@@ -1,0 +1,27 @@
+name: drupal-demo
+recipe: drupal8
+config:
+  webroot: web
+  php: '7.3'
+
+services:
+  appserver:
+    build:
+      - composer install
+      - npm install
+    build_as_root:
+      - curl -sL https://deb.nodesource.com/setup_14.x | bash -
+      - apt-get install -y nodejs
+
+  # Mailhog service to catch all mail notifications sent from appserver.
+  mailhog:
+    type: mailhog
+    hogfrom:
+      - appserver
+    portforward: true
+
+tooling:
+  node:
+    service: appserver
+  npm:
+    service: appserver

@@ -1,0 +1,24 @@
+{
+  "name": "@rlhawk/drupal-demo",
+  "description": "Demonstration of Drupal code and configuration.",
+  "license": "GPL-2.0",
+  "repository": "https://github.com/rlhawk/drupal-demo.git",
+  "contributors": [
+    "Rick Hawkins <rlhawk@352283.no-reply.drupal.org>"
+  ],
+  "main": "web/index.php",
+  "scripts": {
+    "build:dev": "npm run theme:css:dev; npm run theme:js",
+    "build:prod": "npm run theme:css:prod; npm run theme:js",
+    "theme:css:dev": "cd $npm_package_config_theme; postcss ./src/css/**/*.css --env=development --base=src/css --dir=dist/css",
+    "theme:css:prod": "cd $npm_package_config_theme; postcss ./src/css/**/*.css --env=production --base=src/css --dir=dist/css",
+    "theme:js": "cd $npm_package_config_theme; copy-files-from-to"
+  },
+  "dependencies": {
+    "@drupal-demo/custom_theme": "file:web/themes/custom/custom_theme"
+  },
+  "devDependencies": {},
+  "config": {
+    "theme": "web/themes/custom/custom_theme"
+  }
+}

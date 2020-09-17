@@ -1,0 +1,7 @@
+{
+    "name": "drupal-demo/custom_theme",
+    "description": "A custom theme.",
+    "type": "drupal-custom-theme",
+    "license": "GPL-2.0-or-later",
+    "version": "0.0.0"
+}

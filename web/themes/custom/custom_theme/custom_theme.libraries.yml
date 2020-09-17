@@ -1,0 +1,10 @@
+global:
+  css:
+    base:
+      dist/css/tailwind/base.css: {}
+    component:
+      dist/css/tailwind/components.css: {}
+    theme:
+      dist/css/tailwind/utilities.css: {}
+  js:
+    dist/js/alpinejs/alpine.js: {}
