@@ -30,10 +30,15 @@
         "composer/installers": "^1.9",
         "drupal-demo/custom_module": "*",
         "drupal-demo/custom_theme": "*",
+        "drupal/access_unpublished": "^1.0",
         "drupal/admin_toolbar": "^2.3",
+        "drupal/content_lock": "^2.1",
+        "drupal/content_moderation_notifications": "^3.2",
         "drupal/core-composer-scaffold": "^9",
         "drupal/core-project-message": "^9",
         "drupal/core-recommended": "^9",
+        "drupal/olivero": "^1.0@beta",
+        "drupal/scheduler": "^1.3",
         "drush/drush": "^10.3"
     },
     "require-dev": {

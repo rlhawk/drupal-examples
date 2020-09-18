@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6b70f3970a0617ed0473f0d9667fe956",
+    "content-hash": "5d3a62b50ae5ea96efa01d3f6e523e5e",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -60,16 +60,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.154.4",
+            "version": "3.154.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "199a3e1ee89c38251a4a47433560faf5d6a3ef14"
+                "reference": "50b1ef32d51d80f35a691e13c34f67b920765c18"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/199a3e1ee89c38251a4a47433560faf5d6a3ef14",
-                "reference": "199a3e1ee89c38251a4a47433560faf5d6a3ef14",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/50b1ef32d51d80f35a691e13c34f67b920765c18",
+                "reference": "50b1ef32d51d80f35a691e13c34f67b920765c18",
                 "shasum": ""
             },
             "require": {
@@ -141,7 +141,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2020-09-16T18:16:18+00:00"
+            "time": "2020-09-17T18:22:25+00:00"
         },
         {
             "name": "chi-teck/drupal-code-generator",
@@ -1377,7 +1377,10 @@
             "license": [
                 "GPL-2.0-or-later"
             ],
-            "description": "A custom module."
+            "description": "A custom module.",
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "drupal-demo/custom_theme",
@@ -1391,7 +1394,58 @@
             "license": [
                 "GPL-2.0-or-later"
             ],
-            "description": "A custom theme."
+            "description": "A custom theme.",
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "drupal/access_unpublished",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/access_unpublished.git",
+                "reference": "8.x-1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/access_unpublished-8.x-1.0.zip",
+                "reference": "8.x-1.0",
+                "shasum": "dfb825f90ac03cf8cf2c049e06dce2ac0cc5b6dd"
+            },
+            "require": {
+                "drupal/core": "^8.7.7 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.0",
+                    "datestamp": "1590413019",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "chr.fritsch",
+                    "homepage": "https://www.drupal.org/user/2103716"
+                },
+                {
+                    "name": "martin_klima",
+                    "homepage": "https://www.drupal.org/user/2784335"
+                }
+            ],
+            "description": "Grants access to view unpublished content to anyone who has a unique URL and appropriate permissions.",
+            "homepage": "https://www.drupal.org/project/access_unpublished",
+            "support": {
+                "source": "https://git.drupalcode.org/project/access_unpublished"
+            }
         },
         {
             "name": "drupal/admin_toolbar",
@@ -1470,6 +1524,116 @@
                 "source": "https://git.drupalcode.org/project/admin_toolbar",
                 "issues": "https://www.drupal.org/project/issues/admin_toolbar"
             }
+        },
+        {
+            "name": "drupal/content_lock",
+            "version": "2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/content_lock.git",
+                "reference": "8.x-2.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/content_lock-8.x-2.1.zip",
+                "reference": "8.x-2.1",
+                "shasum": "a83983c8deb697cf19863153b2b8c0e1a2452c2f"
+            },
+            "require": {
+                "drupal/core": "^8.8|^9.0"
+            },
+            "require-dev": {
+                "drupal/conflict": "dev-2.x",
+                "drupal/prefetch_cache": "dev-1.x"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-2.1",
+                    "datestamp": "1591342900",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "chr.fritsch",
+                    "homepage": "https://www.drupal.org/user/2103716"
+                },
+                {
+                    "name": "ergonlogic",
+                    "homepage": "https://www.drupal.org/user/368613"
+                },
+                {
+                    "name": "mfb",
+                    "homepage": "https://www.drupal.org/user/12302"
+                },
+                {
+                    "name": "pandaski",
+                    "homepage": "https://www.drupal.org/user/1987218"
+                }
+            ],
+            "description": "Prevents multiple users from trying to edit a content entity simultaneously to prevent edit conflicts.",
+            "homepage": "https://www.drupal.org/project/content_lock",
+            "support": {
+                "source": "https://git.drupalcode.org/project/content_lock"
+            }
+        },
+        {
+            "name": "drupal/content_moderation_notifications",
+            "version": "dev-3.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/content_moderation_notifications.git",
+                "reference": "7ffa9366f1cbafbb5d872c835b7b263cb768a811"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "require-dev": {
+                "drupal/token": "^1.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-3.x": "3.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-3.2+3-dev",
+                    "datestamp": "1588276492",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Rob Holmes",
+                    "homepage": "https://www.drupal.org/user/1774034"
+                },
+                {
+                    "name": "jhedstrom",
+                    "homepage": "https://www.drupal.org/user/208732"
+                }
+            ],
+            "description": "Manage notifications for content moderation transitions.",
+            "homepage": "https://www.drupal.org/project/content_moderation_notifications",
+            "support": {
+                "source": "https://git.drupalcode.org/project/content_moderation_notifications",
+                "issues": "https://www.drupal.org/project/issues/content_moderation_notifications"
+            },
+            "time": "2020-04-30T19:54:32+00:00"
         },
         {
             "name": "drupal/core",
@@ -1881,6 +2045,130 @@
             ],
             "description": "Locked core dependencies; require this project INSTEAD OF drupal/core.",
             "time": "2020-09-16T11:21:49+00:00"
+        },
+        {
+            "name": "drupal/olivero",
+            "version": "1.0.0-beta2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/olivero.git",
+                "reference": "8.x-1.0-beta2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/olivero-8.x-1.0-beta2.zip",
+                "reference": "8.x-1.0-beta2",
+                "shasum": "79b0d74948a33f0322085b58bc1b1992dcf99bb4"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-theme",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.0-beta2",
+                    "datestamp": "1599942309",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "mherchel",
+                    "homepage": "https://www.drupal.org/user/118428"
+                },
+                {
+                    "name": "mtift",
+                    "homepage": "https://www.drupal.org/user/751908"
+                },
+                {
+                    "name": "proeung",
+                    "homepage": "https://www.drupal.org/user/1785940"
+                }
+            ],
+            "description": "A clean, modern, and accessible Drupal default theme.",
+            "homepage": "https://www.drupal.org/project/olivero",
+            "support": {
+                "source": "https://git.drupalcode.org/project/olivero",
+                "issues": "https://www.drupal.org/project/issues/olivero"
+            }
+        },
+        {
+            "name": "drupal/scheduler",
+            "version": "1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/scheduler.git",
+                "reference": "8.x-1.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/scheduler-8.x-1.3.zip",
+                "reference": "8.x-1.3",
+                "shasum": "704f9e289c7a42ddfb65297beb0be02e324f02c6"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "require-dev": {
+                "drupal/devel_generate": "^2.0 || 3.x-dev",
+                "drupal/rules": "^3",
+                "drush/drush": "^9.0 || ^10"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.3",
+                    "datestamp": "1591436219",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                },
+                "drush": {
+                    "services": {
+                        "drush.services.yml": "^9"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Eric Schaefer (Eric Schaefer)",
+                    "homepage": "https://www.drupal.org/u/eric-schaefer",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Jonathan Smith (jonathan1055)",
+                    "homepage": "https://www.drupal.org/u/jonathan1055",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Pieter Frenssen (pfrenssen)",
+                    "homepage": "https://www.drupal.org/u/pfrenssen",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Rick Manelius (rickmanelius)",
+                    "homepage": "https://www.drupal.org/u/rickmanelius",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Automatically publish and unpublish content at specified dates and times.",
+            "homepage": "https://drupal.org/project/scheduler",
+            "support": {
+                "source": "https://git.drupalcode.org/project/scheduler",
+                "issues": "https://www.drupal.org/project/issues/scheduler"
+            }
         },
         {
             "name": "drush/drush",
@@ -6923,7 +7211,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "drupal/olivero": 10
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],
