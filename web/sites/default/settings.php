@@ -32,7 +32,7 @@ $settings['entity_update_backup'] = TRUE;
 // Node migration type.
 $settings['migrate_node_migrate_type_classic'] = FALSE;
 
-$settings['file_public_path'] = $app_root . '/' . $site_path . '/files';
+$settings['file_public_path'] = $site_path . '/files';
 $settings['file_private_path'] = '../private/files';
 
 // Location of the site configuration files.
