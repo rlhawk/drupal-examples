@@ -58,3 +58,17 @@ $config['config_split.config_split.local']['status'] = TRUE;
 if (file_exists($private_path . '/local.settings.php')) {
   include $private_path . '/local.settings.php';
 }
+
+// Salt for one-time login links, cancel links, form tokens, etc. If no salt
+// has yet been defined in $settings, look for one in an environment variable.
+// If the variable does not exist, generate a random salt.
+if (empty($settings['hash_salt'])) {
+  $hash_salt = getenv('DRUPAL_HASH_SALT');
+  if (!$hash_salt) {
+    $encoded_random_bytes = base64_encode(random_bytes(55));
+    $search = ['+', '/', '='];
+    $replace = ['-', '_', ''];
+    $hash_salt = str_replace($search, $replace, $encoded_random_bytes);
+  }
+  $settings['hash_salt'] = $hash_salt;
+}
