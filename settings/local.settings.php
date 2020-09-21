@@ -8,8 +8,8 @@
  */
 
 // Settings for local development using DDEV.
-if (file_exists($app_root . '/' . $site_path . '/settings.ddev.php') && getenv('IS_DDEV_PROJECT') == 'TRUE') {
-  include $app_root . '/' . $site_path . '/settings.ddev.php';
+if (file_exists($global_settings_path . '/ddev.settings.php') && getenv('IS_DDEV_PROJECT')) {
+  include $global_settings_path . '/ddev.settings.php';
 }
 
 // Settings for local development using Lando.

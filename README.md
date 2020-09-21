@@ -4,24 +4,16 @@ Demonstrations of Drupal code and configuration.
 
 ## Get started
 
-The following instructions assume you are using Lando as a local development
-environment. If you are using Ddev or another tool, the instructions will
-need to be modified.
-
 To get started:
 
 1. Clone or download the project \
    `git clone https://github.com/rlhawk/drupal-demo.git`
 2. Change to the project directory \
    `cd drupal-demo`
-3. Copy the example local Lando configuration \
-   `cp .lando.local.example.yml .lando.local.yml`
-4. Generate a hash salt value and add it to the local Lando configuration \
-   `dd if=/dev/urandom bs=55 count=1 | base64 | tr '+/' '-_' | tr -d '='`
-5. Start Lando \
-   `lando start`
-6. Install Drupal \
-   `lando drush site-install -n`
+3. Start DDEV or Lando \
+   `ddev start` or `lando start`
+4. Install Drupal \
+   `ddev exec drush site-install -n` or `lando drush site-install -n`
 
 ## Demonstrations
 

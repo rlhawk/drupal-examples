@@ -16,10 +16,6 @@ services:
       environment:
         # Use the custom domain in Drush URIs.
         DRUSH_OPTIONS_URI: "https://drupal-demo.loc"
-        # Enter a custom hash salt between the quotes. Here's one way to
-        # generate a random value of the appropriate length:
-        # dd if=/dev/urandom bs=55 count=1 | base64 | tr '+/' '-_' | tr -d '='
-        DRUPAL_HASH_SALT: ""
 
   database:
     # Customize the database credentials.
