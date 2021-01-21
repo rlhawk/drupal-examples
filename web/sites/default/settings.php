@@ -36,7 +36,7 @@ $settings['file_public_path'] = $site_path . '/files';
 $settings['file_private_path'] = $private_path . '/files';
 
 // Location of the site configuration files.
-$settings['config_sync_directory'] = $app_root . '/../config/default';
+$settings['config_sync_directory'] = $app_root . '/../config/default/default';
 
 // Global local development settings.
 if (file_exists($global_settings_path . '/local.settings.php') && $local_dev) {
