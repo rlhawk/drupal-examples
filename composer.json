@@ -35,7 +35,6 @@
         "drupal/content_lock": "^2.1",
         "drupal/content_moderation_notifications": "^3.2",
         "drupal/core-composer-scaffold": "^9",
-        "drupal/core-project-message": "^9",
         "drupal/core-recommended": "^9",
         "drupal/scheduler": "^1.3",
         "drush/drush": "^10.3"
