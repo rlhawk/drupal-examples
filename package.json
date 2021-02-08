@@ -17,7 +17,9 @@
   "dependencies": {
     "@drupal-demo/custom_theme": "file:web/themes/custom/custom_theme"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "prettier": "^2.2.1"
+  },
   "config": {
     "theme": "web/themes/custom/custom_theme"
   }
