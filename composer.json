@@ -31,7 +31,7 @@
         "drupal-demo/custom_module": "*",
         "drupal-demo/custom_theme": "*",
         "drupal/access_unpublished": "^1.0",
-        "drupal/admin_toolbar": "^2.3",
+        "drupal/admin_toolbar": "^3.0",
         "drupal/content_lock": "^2.1",
         "drupal/content_moderation_notifications": "^3.2",
         "drupal/core-composer-scaffold": "^9",
