@@ -83,7 +83,8 @@ parameters:
     # render array, hence varying every render array by these cache contexts.
     #
     # @default ['languages:language_interface', 'theme', 'user.permissions']
-    required_cache_contexts: ['languages:language_interface', 'theme', 'user.permissions']
+    required_cache_contexts:
+      ['languages:language_interface', 'theme', 'user.permissions']
     # Renderer automatic placeholdering conditions:
     #
     # Drupal allows portions of the page to be automatically deferred when
@@ -154,10 +155,10 @@ parameters:
     - webcal
     - rtsp
 
-   # Configure Cross-Site HTTP requests (CORS).
-   # Read https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS
-   # for more information about the topic in general.
-   # Note: By default the configuration is disabled.
+  # Configure Cross-Site HTTP requests (CORS).
+  # Read https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS
+  # for more information about the topic in general.
+  # Note: By default the configuration is disabled.
   cors.config:
     enabled: false
     # Specify allowed headers, like 'x-allowed-header'.
