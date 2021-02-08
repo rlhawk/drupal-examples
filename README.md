@@ -43,14 +43,14 @@ This means that PHP dependencies for a custom module can be defined in the modul
 
 ```json
 {
-    "name": "drupal-demo/custom_module",
-    "description": "A custom module.",
-    "type": "drupal-custom-module",
-    "license": "proprietary",
-    "version": "0.0.0",
-    "require": {
-        "aws/aws-sdk-php": "^3.153"
-    }
+  "name": "drupal-demo/custom_module",
+  "description": "A custom module.",
+  "type": "drupal-custom-module",
+  "license": "proprietary",
+  "version": "0.0.0",
+  "require": {
+    "aws/aws-sdk-php": "^3.153"
+  }
 }
 ```
 
