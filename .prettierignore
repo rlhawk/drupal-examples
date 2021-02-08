@@ -24,12 +24,6 @@
 # Dist directories in themes
 /web/themes/custom/*/dist/
 
-# Local configuration
-/.lando.local.yml
-
-# .htaccess files in configuration directories
-/config/**/.htaccess
-
 # Drupal configuration files
 /config
 
