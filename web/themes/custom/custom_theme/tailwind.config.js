@@ -6,9 +6,7 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
-  plugins: [
-    require("@tailwindcss/ui"),
-  ],
+  plugins: [require('@tailwindcss/ui')],
   purge: {
     content: [
       // Don't purge classes that appear in these files.
@@ -18,8 +16,7 @@ module.exports = {
     options: {
       // Whitelist classes that are frequently generated dynamically based on
       // color, such as text, backgrounds, and borders.
-      whitelistPatterns: [
-      ],
+      whitelistPatterns: [],
     },
   },
   // Opt in to upcoming breaking changes.
