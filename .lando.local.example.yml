@@ -2,7 +2,7 @@ proxy:
   appserver:
     # To use a custom domain, define it here. You will also need to add it
     # to your /etc/hosts file or use a DNS tool (such as dnsmasq) to resolve
-    # the domain to 127.0.0.1
+    # the domain to 127.0.0.1.
     - drupal-demo.loc
 
 services:
@@ -15,7 +15,7 @@ services:
     overrides:
       environment:
         # Use the custom domain in Drush URIs.
-        DRUSH_OPTIONS_URI: "https://drupal-demo.loc"
+        DRUSH_OPTIONS_URI: 'https://drupal-demo.loc'
 
   database:
     # Customize the database credentials.
