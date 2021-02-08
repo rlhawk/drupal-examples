@@ -1,29 +1,29 @@
 {
-    "name": "@drupal-demo/custom_theme",
-    "description": "A custom theme.",
-    "private": true,
-    "version": "0.0.0",
-    "dependencies": {
-        "@tailwindcss/ui": "^0.5.0",
-        "alpinejs": "^2.6.0",
-        "copy-files-from-to": "^3.1.4",
-        "cssnano": "^4.1.10",
-        "postcss-cli": "^7.1.1",
-        "postcss-preset-env": "^6.7.0",
-        "rimraf": "^3.0.2",
-        "tailwindcss": "^1.8.5",
-        "yargs": "^15.4.1"
-    },
-    "copyFiles": [
-        {
-            "//": "--- Alpine.js ---",
-            "from": [
-                "../../../../node_modules/alpinejs/dist/*.js"
-            ],
-            "to": "dist/js/alpinejs"
-        }
-    ],
-    "copyFilesSettings": {
-        "whenFileExists": "overwrite"
+  "name": "@drupal-demo/custom_theme",
+  "description": "A custom theme.",
+  "private": true,
+  "version": "0.0.0",
+  "dependencies": {
+    "@tailwindcss/ui": "^0.5.0",
+    "alpinejs": "^2.6.0",
+    "copy-files-from-to": "^3.1.4",
+    "cssnano": "^4.1.10",
+    "postcss-cli": "^7.1.1",
+    "postcss-preset-env": "^6.7.0",
+    "rimraf": "^3.0.2",
+    "tailwindcss": "^1.8.5",
+    "yargs": "^15.4.1"
+  },
+  "copyFiles": [
+    {
+      "//": "--- Alpine.js ---",
+      "from": [
+        "../../../../node_modules/alpinejs/dist/*.js"
+      ],
+      "to": "dist/js/alpinejs"
     }
+  ],
+  "copyFilesSettings": {
+    "whenFileExists": "overwrite"
+  }
 }
