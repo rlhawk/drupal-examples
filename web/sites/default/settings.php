@@ -7,7 +7,10 @@
  * For more information, see default.settings.php.
  */
 
+// Determine if this is a local development environment.
 $local_dev = getenv('IS_DDEV_PROJECT') || getenv('LANDO_INFO');
+
+// Paths for global settings and private files.
 $global_settings_path = $app_root . '/../settings';
 $private_path = $app_root . '/../private';
 
@@ -32,6 +35,7 @@ $settings['entity_update_backup'] = TRUE;
 // Node migration type.
 $settings['migrate_node_migrate_type_classic'] = FALSE;
 
+// Public and private file paths.
 $settings['file_public_path'] = $site_path . '/files';
 $settings['file_private_path'] = $private_path . '/files';
 
